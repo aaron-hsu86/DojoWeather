@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- nav bar -->
+    <div class="nav-banner flex-center">
+        <div class="nav-bar">
+            <p class="site-name">DojoWeather</p>
+            <ul class="locations">
+                <li onclick="loadCity(this)">Burbank</li>
+                <li onclick="loadCity(this)">Chicago</li>
+                <li onclick="loadCity(this)">Dallas</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- location -->
+    <div class="location flex-center">
+        <div class="location-info">
+            <div class="current-location">San Jose</div>
+            <div class="temperature-C-F">
+                <label>show temperature in</label>
+                <select onchange="changeDegree(this)">
+                    <option id="celcius">&deg;C</option>
+                    <option id="faren">&deg;F</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- location's weather -->
+    <div class="weatherforecast flex-center">
+        <div class="today weather-container">
+            <p class="date">Today</p>
+            <img src="./assets/some_rain.png" alt="some-rain">
+            <p class="weather-description">some rain</p>
+            <div class="temperature-range">
+                <div class="tempH">
+                    <p class="hot">24</p>
+                    <p>&deg;</p>
+                </div>
+                <div class="tempC">
+                    <p class="cold">18</p>
+                    <p>&deg;</p>
+                </div>
+            </div>
+        </div>
+        <div class="tomorrow weather-container">
+            <p class="date">Tomorrow</p>
+            <img src="./assets/some_sun.png" alt="some-sun">
+            <p class="weather-description">some rain</p>
+            <div class="temperature-range">
+                <div class="tempH">
+                    <p class="hot">27</p>
+                    <p>&deg;</p>
+                </div>
+                <div class="tempC">
+                    <p class="cold">19</p>
+                    <p>&deg;</p>
+                </div>
+            </div>
+        </div>
+        <div class="friday weather-container">
+            <p class="date">Friday</p>
+            <img src="./assets/some_clouds.png" alt="some-clouds">
+            <p class="weather-description">some rain</p>
+            <div class="temperature-range">
+                <div class="tempH">
+                    <p class="hot">21</p>
+                    <p>&deg;</p>
+                </div>
+                <div class="tempC">
+                    <p class="cold">16</p>
+                    <p>&deg;</p>
+                </div>
+            </div>
+        </div>
+        <div class="saturday weather-container">
+            <p class="date">Saturday</p>
+            <img src="./assets/some_sun.png" alt="some-sun">
+            <p class="weather-description">some rain</p>
+            <div class="temperature-range">
+                <div class="tempH">
+                    <p class="hot">26</p>
+                    <p>&deg;</p>
+                </div>
+                <div class="tempC">
+                    <p class="cold">21</p>
+                    <p>&deg;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie notification -->
+    <div class="cookies flex-center">
+        <div class="popup">
+            <img src="./assets/cookie.png" alt="cookie-icon">
+            <div class="cookie-text">
+                <p class="title">Stop! Cookie time</p>
+                <p class="description">
+                    We use cookies (sadly not the edible ones) to personalize<br>
+                    content and ads, to provide social media features and to<br>
+                    analyse our traffic. <a href="#">Read more...</a>
+                </p>
+            </div>
+            <button onclick="acceptCookies(cookieContainer)">I Accept</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

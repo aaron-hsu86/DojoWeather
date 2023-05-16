@@ -1,0 +1,126 @@
+/* General setup */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+/* nav bar */
+.nav-banner {
+    background-color: rgb(97, 176, 255);
+}
+.nav-bar {
+    width: 1000px;
+    height: 100px;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-bar > p {
+    font-size: 50px;
+    font-weight: 700;
+}
+.nav-bar > .locations {
+    display: flex;
+    list-style: none;
+    font-size: 30px;
+    font-weight: 600;
+    gap: 50px;
+}
+
+/* location info */
+.location-info {
+    width: 1000px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-style: solid;
+    border-width: 3px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+}
+.current-location {
+    font-size: 30px;
+}
+
+/* location weather */
+/* .weatherforcast {
+    justify-content: center;
+} */
+.weather-container {
+    padding: 20px;
+    background-color: lightgrey;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.date {
+    font-size: 30px;
+    font-weight: 600;
+}
+.weather-container > img {
+    width: 150px;
+    border-radius: 50%;
+    margin: 25px;
+}
+.temperature-range {
+    width: 150px;
+    margin: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+}
+.tempH {
+    display: flex;
+    color: red
+}
+.tempC {
+    display: flex;
+    color: blue;
+}
+
+/* popup */
+.popup {
+    width: 600px;
+    padding: 20px;
+    background-color: lightgray;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 5px;
+}
+.popup > img {
+    height: 75px;
+}
+.cookie-text > .title {
+    font-size: 20px;
+    font-weight: 700;
+}
+.popup > button {
+    width: 60px;
+    height: 30px;
+    background-color: deepskyblue;
+    border-style: solid;
+    box-shadow: 3px 3px black;
+}
