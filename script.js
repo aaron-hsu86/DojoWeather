@@ -26,6 +26,8 @@ function convertFtoC(temp){
     return temp;
 }
 
+// after checking solution, they created a consistent naming convention so they do a for loop
+// same amount of work, less code written.
 function changeDegree(element){
     if (element.value == element.querySelector("#celcius").innerText){
         todH = convertFtoC(todH);
